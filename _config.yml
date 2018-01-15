@@ -31,6 +31,17 @@ plugins:
 
 minimal_mistakes_skin: "dark"
 
+paginate: 5
+paginate_path: /blog/page:num
+permalink: /blog/:year/:month/:title.html
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      comments: true
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
